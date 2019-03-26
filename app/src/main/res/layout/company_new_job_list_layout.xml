@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/gradientbackground">
+
+        <TextView
+            android:id="@+id/tv_display_job_list_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="Name"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/white" />
+
+
+        <TextView
+            android:id="@+id/tv_display_job_list_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Phone"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textAlignment="viewEnd"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:id="@+id/tv_display_job_list_college"
+            android:layout_below="@+id/tv_display_job_list_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="College"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/tv_display_job_list_email"
+            android:layout_below="@+id/tv_display_job_list_college"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/tv_display_job_list_city"
+            android:layout_below="@+id/tv_display_job_list_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="City"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/tv_display_job_list_date_time"
+            android:layout_below="@+id/tv_display_job_list_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date Time"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"/>
+
+
+        <Button
+            android:id="@+id/btn_show_post"
+            android:layout_below="@+id/tv_display_job_list_date_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:background="@color/white"
+            android:padding="5dp"
+            android:text="Show This Post"
+            android:textColor="@color/gray"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/btn_show_resume"
+            android:layout_below="@+id/btn_show_post"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentStart="true"
+            android:background="@color/white"
+            android:padding="5dp"
+            android:text="Show Resume"
+            android:textAlignment="center"
+            android:textColor="@color/gray"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/btn_send_mail"
+            android:layout_below="@+id/btn_show_post"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentEnd="true"
+            android:background="@color/white"
+            android:padding="5dp"
+            android:text="Send Email"
+            android:textStyle="bold"
+            android:textColor="@color/gray"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textSize="16sp"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

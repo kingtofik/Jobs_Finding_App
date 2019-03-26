@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#47535E</color>
+    <color name="colorPrimaryDark">#47535E</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="lightgreen">#3ddd35</color>
+    <color name="darkgreen">#20b50c</color>
+    <color name="darkestgreen">#3ca80a</color>
+    <color name="green">#45CE30</color>
+    <color name="white">#fff</color>
+    <color name="gray">#777E8B</color>
+    <color name="lightgray">#758AA2</color>
+    <color name="darkgray">#47535E</color>
+    <color name="gold">#ffb800</color>
+
+    <color name="editTextBG">#DADADA</color>
+    <color name="transparent">#00000000</color>
+    <color name="textColor">#6e6e6e</color>
+    <color name="bottomcolor">#c8d6e5</color>
+
+</resources>

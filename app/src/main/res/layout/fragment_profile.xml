@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/editTextBG"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="15dp"
+        app:cardCornerRadius="3dp"
+        android:elevation="4dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true">
+<RelativeLayout
+    android:id="@+id/profile_relative1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_pic"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/profil_pic"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FFF"/>
+    <TextView
+        android:id="@+id/tv_profile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Name" />
+    <TextView
+        android:id="@+id/tv_profile_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_profile_name"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="12dp"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Phone"/>
+    <!--<Button
+        android:id="@+id/btn_profile_arrow"
+        android:layout_width="60dp"
+        android:layout_height="45dp"
+        android:background="@drawable/ic_arrow_right"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"/>-->
+
+    </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <LinearLayout
+        android:id="@+id/profile_linear1"
+        android:layout_below="@+id/card1"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="3dp"
+            android:elevation="4dp"
+            app:cardUseCompatPadding="true"
+            app:cardPreventCornerOverlap="false">
+
+            <TextView
+                android:id="@+id/tv_profile_notification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:text="Notification"
+                android:drawableRight="@drawable/ic_notifications_black" />
+
+            <View
+                android:id="@+id/SplitLine_hor1"
+                android:layout_width="match_parent"
+                android:layout_height= "1dp"
+                android:layout_marginTop="45dp"
+                android:background="@color/gray" />
+
+            <TextView
+                android:id="@+id/tv_profile_history"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="55dp"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_vertical"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:text="History"
+                android:drawableRight="@drawable/ic_history" />
+
+            <View
+                android:id="@+id/SplitLine_hor2"
+                android:layout_width="match_parent"
+                android:layout_height= "1dp"
+                android:layout_marginTop="90dp"
+                android:background="@color/gray" />
+
+
+            <TextView
+                android:id="@+id/tv_profile_settings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="100dp"
+                android:layout_marginLeft="5dp"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:text="Settings"
+                android:drawableRight="@drawable/ic_settings" />
+
+            <View
+                android:id="@+id/SplitLine_hor3"
+                android:layout_width="match_parent"
+                android:layout_height= "1dp"
+                android:layout_marginTop="135dp"
+                android:background="@color/gray" />
+
+
+            <TextView
+                android:id="@+id/tv_profile_help"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="145dp"
+                android:layout_marginLeft="5dp"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:text="Help"
+                android:drawableRight="@drawable/ic_help" />
+
+            <View
+                android:id="@+id/SplitLine_hor4"
+                android:layout_width="match_parent"
+                android:layout_height= "1dp"
+                android:layout_marginTop="180dp"
+                android:background="@color/gray" />
+
+            <TextView
+                android:id="@+id/tv_profile_invite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="190dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="10dp"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:text="Invite Friends"
+                android:drawableRight="@drawable/ic_share_black" />
+
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:id="@+id/profile_linear2"
+            android:layout_below="@+id/profile_linear1"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:cardCornerRadius="3dp"
+            android:elevation="4dp"
+            app:cardUseCompatPadding="true"
+            app:cardPreventCornerOverlap="false">
+
+            <TextView
+                android:id="@+id/tv_profile_logout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAllCaps="false"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_vertical"
+                android:textSize="20sp"
+                android:text="Logout"
+                android:drawableRight="@drawable/ic_logout" />
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

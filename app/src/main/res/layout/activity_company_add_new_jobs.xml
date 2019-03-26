@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CompanyAddNewJobsActivity">
+
+
+    <ScrollView
+        android:id="@+id/add_scrollbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp">
+
+        <ImageView
+            android:id="@+id/select_image"
+            android:layout_width="220dp"
+            android:layout_height="170dp"
+            android:cropToPadding="false"
+            android:scaleType="centerCrop"
+            android:src="@drawable/select_pic"
+            android:layout_centerHorizontal="true"/>
+
+        <EditText
+            android:id="@+id/et_company_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/select_image"
+            android:inputType="textImeMultiLine"
+            android:layout_marginTop="30dp"
+            android:padding="20dp"
+            android:hint="Company Name"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" />
+
+        <EditText
+            android:id="@+id/et_company_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_company_name"
+            android:inputType="textImeMultiLine"
+            android:layout_marginTop="20dp"
+            android:padding="20dp"
+            android:hint="Company Description"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" />
+
+        <EditText
+            android:id="@+id/et_company_job_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_company_desc"
+            android:inputType="textImeMultiLine"
+            android:layout_marginTop="20dp"
+            android:padding="20dp"
+            android:hint="Job Title"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" />
+
+        <EditText
+            android:id="@+id/et_company_job_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_company_job_title"
+            android:inputType="textImeMultiLine"
+            android:layout_marginTop="20dp"
+            android:padding="20dp"
+            android:hint="Job Description"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" />
+
+
+        <EditText
+            android:id="@+id/et_company_job_experience"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_company_job_desc"
+            android:inputType="textImeMultiLine"
+            android:layout_marginTop="20dp"
+            android:padding="20dp"
+            android:hint="Experience"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" />
+
+        <EditText
+            android:id="@+id/et_company_job_salary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_company_job_experience"
+            android:inputType="phone"
+            android:layout_marginTop="20dp"
+            android:padding="20dp"
+            android:hint="Salary"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" />
+        <EditText
+            android:id="@+id/et_company_job_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_company_job_salary"
+            android:inputType="textImeMultiLine"
+            android:layout_marginTop="20dp"
+            android:padding="20dp"
+            android:hint="Location"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" />
+
+        <Button
+            android:id="@+id/btn_add_new_jobs"
+            android:layout_below="@+id/et_company_job_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="35dp"
+            android:padding="10dp"
+            android:background="@drawable/gradientbackground"
+            android:textColor="@color/gold"
+            android:text="Add Jobs"
+            android:textSize="22sp"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

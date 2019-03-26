@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CompanyCategorieActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/category_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:popupTheme="@style/Base.ThemeOverlay.AppCompat.Light"
+        android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:background="@drawable/gradientbackground"
+        app:title="Company Add Jobs"
+        android:elevation="4dp"/>
+
+    <TextView
+        android:layout_below="@+id/category_toolbar"
+        android:id="@+id/tv_addjobs_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add New Jobs,Projects and Internship"
+        android:textSize="23sp"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:textAllCaps="false" />
+<ScrollView
+    android:id="@+id/category_scroll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical"
+    android:layout_below="@+id/tv_addjobs_title">
+
+    <RelativeLayout
+        android:id="@+id/category_relative1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
+
+            <ImageView
+                android:id="@+id/image_jobs"
+                android:layout_width="110dp"
+                android:layout_height="80dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="40dp"
+                android:src="@drawable/category_privet_jobs"
+                android:tint="@color/darkgray"/>
+            <TextView
+                android:id="@+id/tv_category_jobs"
+                android:layout_below="@+id/image_jobs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:text="Jobs" />
+
+
+            <ImageView
+            android:id="@+id/image_inrenship"
+            android:layout_width="110dp"
+            android:layout_height="80dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="45dp"
+            android:src="@drawable/category_inrenship"
+            android:tint="@color/darkgray"/>
+        <TextView
+            android:id="@+id/tv_category_internship"
+            android:layout_below="@+id/image_inrenship"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="50dp"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:text="Intrenship" />
+
+
+        <ImageView
+            android:id="@+id/image_freelancing"
+            android:layout_below="@id/image_jobs"
+            android:layout_width="110dp"
+            android:layout_height="80dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/category_freelanacing"
+            android:tint="@color/darkgray"/>
+
+        <TextView
+            android:id="@+id/tv_category_freelance"
+            android:layout_below="@+id/image_freelancing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:text="Freelance Projects" />
+
+        <ImageView
+            android:id="@+id/image_news"
+            android:layout_width="110dp"
+            android:layout_height="80dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/image_inrenship"
+            android:layout_marginRight="45dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/category_news"
+            android:tint="@color/darkgray"/>
+        <TextView
+            android:id="@+id/tv_category_news"
+            android:layout_below="@+id/image_news"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="75dp"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:text="News" />
+
+        <ImageView
+            android:id="@+id/image_interview"
+            android:layout_below="@id/image_freelancing"
+            android:layout_width="110dp"
+            android:layout_height="80dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/category_interview_tips"
+            android:tint="@color/darkgray"/>
+
+        <TextView
+            android:id="@+id/tv_category_interview"
+            android:layout_below="@+id/image_interview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:text="Interview Tips" />
+
+
+    </RelativeLayout>
+
+</ScrollView>
+</RelativeLayout>

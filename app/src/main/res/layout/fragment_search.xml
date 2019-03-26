@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/search_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/gradientbackground">
+
+
+        <EditText
+            android:id="@+id/et_search_jobs"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:hint="Search Job"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:textSize="18sp"
+            android:padding="9dp"
+            android:textColorHint="@color/gray"
+            android:background="@color/white"/>
+
+
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginLeft="5dp"
+            android:text="Search"
+            android:layout_toRightOf="@+id/et_search_jobs"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycle_search_list"
+            android:layout_below="@+id/search_relative_layout"
+            android:layout_above="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+</RelativeLayout>

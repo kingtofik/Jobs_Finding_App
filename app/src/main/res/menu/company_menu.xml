@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/company_status_reports"
+        android:title="Status Reports"
+        android:orderInCategory="100"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/company_apply_job_list"
+        android:title="Apply List"
+        android:orderInCategory="100"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/company_profile"
+        android:title="Profile"
+        app:showAsAction="never"
+        android:orderInCategory="100"/>
+    <item
+        android:id="@+id/company_logout"
+        android:title="Logout"
+        app:showAsAction="never"
+        android:orderInCategory="100"/>
+
+</menu>

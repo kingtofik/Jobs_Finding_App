@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.student.job.scc">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".CompanyProfileActivity"></activity>
+        <activity android:name=".CompanyNewJobsListActivity" />
+        <activity android:name=".ApplyJobsActivity" />
+        <activity android:name=".JobDetailsActivity" />
+        <activity android:name=".CompanyCategorieActivity" />
+        <activity android:name=".CompanyAddNewJobsActivity" /> <!-- <activity android:name=".already" /> -->
+        <activity android:name=".Help" />
+        <activity android:name=".Settings" />
+        <activity android:name=".History" />
+        <activity android:name=".Notification" />
+        <activity android:name=".MainHomeActivity" />
+        <activity android:name=".login" />
+        <activity android:name=".Signup" />
+        <activity android:name=".splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+    </application>
+
+</manifest>

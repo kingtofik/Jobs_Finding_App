@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".splash"
+
+    android:background="@color/darkgray">
+
+
+    <ImageView
+        android:id="@+id/scclogo"
+        android:layout_width="210dp"
+        android:layout_height="170dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/new_logo"/>
+    <TextView
+        android:id="@+id/scclogoname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SCC"
+        android:layout_marginTop="15dp"
+        android:textSize="40sp"
+        android:fontFamily="serif-monospace"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_below="@+id/scclogo"
+        android:layout_centerInParent="true"/>
+
+
+
+</RelativeLayout>

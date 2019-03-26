@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ApplyJobsActivity">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar_settings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gradientbackground"
+                app:title="Apply Jobs"
+                app:titleTextColor="@color/white">
+
+            </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/btn_jobs_apply_job_relative1"
+        android:layout_below="@+id/toolbar_settings"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_apply_job_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please Fill All Details For Applying This Job"
+            android:textStyle="bold"
+            android:textColor="@color/gray"
+            android:textSize="18sp"
+            android:textAlignment="center"/>
+
+        <EditText
+            android:id="@+id/et_apply_job_name"
+            android:layout_below="@+id/tv_apply_job_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:padding="10dp"
+            android:hint="Full Name"/>
+
+        <EditText
+            android:id="@+id/et_apply_job_phone"
+            android:layout_below="@+id/et_apply_job_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:padding="10dp"
+            android:inputType="phone"
+            android:hint="Your Phone No"/>
+
+
+        <EditText
+            android:id="@+id/et_apply_job_city"
+            android:layout_below="@+id/et_apply_job_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:padding="10dp"
+            android:hint="Your City"/>
+
+        <EditText
+            android:id="@+id/et_apply_job_college"
+            android:layout_below="@+id/et_apply_job_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:padding="10dp"
+            android:hint="College Name"/>
+
+        <EditText
+            android:id="@+id/et_apply_job_email"
+            android:layout_below="@+id/et_apply_job_college"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:padding="10dp"
+            android:hint="Email Addres"/>
+
+        <Button
+            android:id="@+id/btn_upload_resume"
+            android:layout_below="@+id/et_apply_job_email"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="Upload Resume"
+            android:textSize="15sp"
+            android:padding="10dp"
+            android:textAllCaps="false"
+            android:background="@color/editTextBG"/>
+
+        <Button
+            android:id="@+id/btn_apply_job"
+            android:layout_below="@+id/btn_upload_resume"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/gradientbackground"
+            android:padding="10dp"
+            android:text="Apply"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textAllCaps="false"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

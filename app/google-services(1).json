@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "841014429255",
+    "firebase_url": "https://scc-new.firebaseio.com",
+    "project_id": "scc-new",
+    "storage_bucket": "scc-new.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:841014429255:android:95fd685cb99b9087",
+        "android_client_info": {
+          "package_name": "com.student.job.scc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "841014429255-3pj6jl0kde6ak6924iafuvett52p7qub.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.student.job.scc",
+            "certificate_hash": "3891534161da72c1bb64566e4992b0349406bf5e"
+          }
+        },
+        {
+          "client_id": "841014429255-avjqp80jnr99fcpf2g49t620g4d297o7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOkzZKih5yOKPxoFSLUPS7zPdq5aLpKjg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "841014429255-avjqp80jnr99fcpf2g49t620g4d297o7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
